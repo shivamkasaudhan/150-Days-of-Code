@@ -42,9 +42,10 @@ int main()
     cin >> color;
     cout << "An animal :";
     cin >> pet;
-    cout << "Dear Instructor " << int_name << "," << endl
+    cout << "Dear Instructor " << int_name << "," << endl<<endl
          << "I am sorry that I am unable to turn in my homework at this time. First, I ate a rotten " << food << ","
          << " which made me turn " << color << "and extremely ill. I came down with a fever of " << number << ". "
-         << "Next, my " << pet_name << " pet " << pet << " must have smelled the remains of the " << food << " on my homework, because he ate it. I am currently rewriting my homework and hope you will accept it late.";
+         << "Next, my " << pet_name << " pet " << pet << " must have smelled the remains of the " << food << " on my homework, because he ate it. I am currently rewriting my homework and hope you will accept it late."<<endl;
+    cout<<"Sincerely,"<<endl<<name<<endl;
     return 0;
 }
