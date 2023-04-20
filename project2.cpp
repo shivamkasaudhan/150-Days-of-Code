@@ -6,9 +6,22 @@
 //should allow the calculation to be
 #include <iostream>
 using namespace std;
+int increment(int s,double d ){
+    return(s+s*d);
+}
 int main()
 {
-    const int increse =0.076;
+    int Salery;
+    const double increase = 0.076;
+    char more;
+    do
+    {
+        cout<<" Enter your Salery: ";
+        cin>>Salery;
+        cout<<"your salery after increment : "<<increment(Salery, increase)<<endl;
+        cout<<"continue: y/n ";
+        cin>>more;
+    } while (tolower(more)=='y');
     
     return 0;
 }
