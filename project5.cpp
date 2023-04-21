@@ -36,12 +36,28 @@ int main()
     char more;
     do
     {
-        cout << "How many hour emplyee worked in a week ";
+        cout << "How many hour emplyee worked in a week:  ";
         cin >> hour;
         cout << "How many dependents on worker: ";
         cin >> depend;
         cout<<"Gross Pay out= "<<salery(hour,rate)<<endl;
-        cout<<"do you want to continue? y/n";
+        double security,fedral,state;
+        security= salery(hour,rate)*0.06;
+        fedral= salery(hour,rate)*0.14;
+        state =salery(hour,rate)*0.05;
+        cout<<"Sequrity tax= "<<security<<endl;
+        cout<<"Fedral income tax= "<<fedral<<endl;
+        cout<<"State income tax= "<<state<<endl;
+        int health;
+        if (depend<=3)
+        {
+            health = 35;
+        }else{
+            health=0;
+        }
+        double net_sal= salery(hour,rate) - (security+fedral+state+health+10);
+        cout<<"Net salery= "<<net_sal<<endl;
+        cout<<"do you want to continue? y/n: ";
         cin>>more;
 
     } while (tolower(more) == 'y');
