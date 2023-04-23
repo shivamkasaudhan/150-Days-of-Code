@@ -10,18 +10,28 @@
 // program should then convert the percent to a fraction, like 0.056, and 
 // should use a loop to estimate the price adjusted for inflation. 
 #include <iostream>
-using namespace std;
 int main(){
     double cost,i_rate;
     int year;
     char more;
     do
     {
-        cout<<"Enter the cost of the pencil= ";
-        cin>>cost;
-        cout<<"Enter the inflation rate= ";
-        cin>>i_rate;
+        std::cout<<"Enter the cost of the pencil= ";
+        std::cin>>cost;
+        std::cout<<"Enter the inflation rate= ";
+        std::cin>>i_rate;
+        std::cout<<"Number of years from now: ";
+        std::cin>>year;
+        double rate = i_rate*0.01;
+        double infleted_cost = cost;
+        for (int i = 0; i <=year; i++)
+        {
+            infleted_cost = cost + cost*rate;
+        }
+        std::cout<<"After "<<year<<" year according to inflation rate of "<<i_rate<<"% the cost of pencil will be "<<infleted_cost<<". "<<std::endl; 
         
+        std::cout<<"Do you want to continur? y/n: ";
+        std::cin>>more;
     } while (tolower(more)=='y');
     
 
