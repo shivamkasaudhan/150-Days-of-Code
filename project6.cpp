@@ -27,6 +27,7 @@ int main(){
         for (int i = 0; i <=year; i++)
         {
             infleted_cost = cost + cost*rate;
+    
         }
         std::cout<<"After "<<year<<" year according to inflation rate of "<<i_rate<<"% the cost of pencil will be "<<infleted_cost<<". "<<std::endl; 
         
