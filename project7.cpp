@@ -18,8 +18,58 @@
 // Do not forget the interest on the last payment. If you owe $50, then your 
 // monthly payment of $50 will not pay off your debt, although it will come 
 // close. One month’s interest on $50 is only 75 cents.
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main(){
-    return 0;
+
+int Calculate(double, double, double);
+
+int main()
+{
+
+double Debtn = 1000;
+double Interestn = 0.015;
+double Principaln;
+int count = 0;
+double total=0, t_int=0;
+
+
+count = Calculate(Debtn, 0.015, 50);
+cout<<"\nUser will need "<<count<<" months to pay off the loan."<<endl;
+return 0;
+}
+
+int Calculate(double Debtn, double rate, double monthly_pay)
+{
+
+double Interestn;
+double Principaln;
+int count = 0;
+double total=0, t_int=0;
+
+cout<<"\n(MONTH) (INTEREST PAID)"<<Debtn<<endl;
+
+while(Debtn>=50)
+{
+
+Interestn = Debtn*rate;
+Principaln = monthly_pay - Interestn;
+Debtn = Debtn - Principaln;
+count++;
+t_int+=Interestn;
+total+=Principaln;
+cout<<count<<"\t"<<Principaln<<endl;
+}
+
+Interestn = Debtn*rate;
+Principaln = monthly_pay - Interestn;
+Debtn = Debtn - Principaln;
+count++;
+t_int+=Interestn;
+total+=Principaln;
+cout<<count<<"\t"<<Principaln<<endl;
+
+cout<<"\nTOTAL AMOUNT PAID IS:  "<<total<<"\n\n";
+cout<<"\nTOTAL INTEREST PAID IS:  "<<t_int<<"\n\n";
+
+return count;
 }
