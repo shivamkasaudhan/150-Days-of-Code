@@ -10,7 +10,7 @@
 // you how many months it will take you to pay off the loan, as well as the 
 // total amount of interest paid over the life of the loan. Use a loop to calculate 
 // the amount of interest and the size of the debt after each month. (Your final 
-// program need not output the monthly amount of interest paid and remaining debt, 
+// program need not output the monthly amount of interest paid and remaining debt, 
 // but you may want to write a preliminary version of the program 
 // that does output these values.) Use a variable to count the number of loop 
 // iterations and hence the number of months until the debt is zero. You may 
