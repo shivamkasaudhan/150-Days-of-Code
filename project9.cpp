@@ -33,9 +33,6 @@ int main()
             sum_neg = sum_neg + arr[i];
         }
         sum = sum + arr[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
         if (arr[n] < 0)
         {
             neg_count++;
