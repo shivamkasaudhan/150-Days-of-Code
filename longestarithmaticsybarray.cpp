@@ -15,7 +15,7 @@ int main(){
     {
         idx[i]= -1;
     }
-    int minidx = INT_max;
+    // int minidx = ;
 
     return 0;
 }
