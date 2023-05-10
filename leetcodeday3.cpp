@@ -56,3 +56,22 @@ public:
         return count;
     }
 };
+// 1051. Height Checker
+class Solution {
+public:
+    int heightChecker(vector<int>& heights) {
+        vector<int> a;
+        int count = 0;
+        a = heights;
+        sort(a.begin(),a.end());
+        for(int i=0;i<heights.size();i++)
+        {
+            if(a[i] != heights[i])
+            {
+                count++;
+            }
+        }
+    return count;
+    }
+};
+
