@@ -15,6 +15,5 @@ int main(){
         mx= max(mx,arr[i]);
         cout<<mx<<endl;
     }
-    
     return 0;
 }

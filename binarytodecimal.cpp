@@ -11,9 +11,7 @@ int main(){
         des=des+rem*pow(2,i);
         i++;
         temp= temp/10;
-
     }
     cout<<des;
-    
     return 0;
 }

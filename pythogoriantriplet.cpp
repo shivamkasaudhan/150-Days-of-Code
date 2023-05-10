@@ -1,3 +1,4 @@
+//day24
 #include <iostream>
 using namespace std;
 bool ckeck(int x, int y, int z){
@@ -19,7 +20,6 @@ bool ckeck(int x, int y, int z){
         return true;
     }
     return false;
-    
 }
 int main(){
     int a, b,c;
