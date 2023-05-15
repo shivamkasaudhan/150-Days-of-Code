@@ -17,10 +17,14 @@
 #include <iostream>
 using namespace std;
 int main(){
-
-
-
-
+    int a,b;
+    cout<<"Enter the range : ";
+    cin>>a>>b;
+    for (int i = a; i <=b; i++)
+    {
+        double c= 333.1 + 0.61*i;
+        cout<<"At "<<i<<" degrees celsius the velocity of sound is "<<c<<" m/s"<<endl;
+    }
     
     return 0;
 }
