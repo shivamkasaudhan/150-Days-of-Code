@@ -7,9 +7,7 @@ void swapalter(int a[],int n){
         {
             swap(a[i],a[i+1]);
         }
-        
     }
-    
 }
 void print(int a[],int n){
     for (int i = 0; i < n; i++)
