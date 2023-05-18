@@ -35,3 +35,19 @@ public:
     }
 };
 //time limit exceeded on this
+
+
+// 2520. Count the Digits That Divide a Number
+class Solution {
+public:
+    int countDigits(int num) {
+        int n=num;
+        int ans=0;
+        while(n){
+            int rem=n%10;
+            n/=10;
+            if(num%rem==0)ans++;
+        }
+        return ans;
+    }
+};
