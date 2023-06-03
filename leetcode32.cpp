@@ -16,3 +16,21 @@ public:
         
     }
 };
+// 1688. Count of Matches in Tournament
+class Solution {
+public:
+    int numberOfMatches(int n) {
+        return n-1;
+    }
+};
+// 2549. Count Distinct Numbers on Board
+
+class Solution {
+public:
+    int distinctIntegers(int n) {
+        if(n==1)return n;
+        return n-1;
+        
+    }
+};
+
