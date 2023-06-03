@@ -92,6 +92,27 @@ public:
         
     }
 };
+// 1492. The kth Factor of n
+// 100% beats
+class Solution {
+public:
+    int kthFactor(int n, int k) {
+        int ans;
+        vector<int> factors;
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                factors.push_back(i);
+            }
+        }
+        if(factors.size()>=k){
+            ans=factors[k-1];
+        }else{
+            ans=-1;
+        }
+        return ans;
+        
+    }
+};
 
 
 
