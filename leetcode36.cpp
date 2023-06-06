@@ -18,4 +18,44 @@ public:
         
     }
 };
+// 367. Valid Perfect Square
+//brute force
+//100% beats
+// tc O(n)
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        int i =1;
+        while(num>0){
+            num-=i;
+            i+=2;
+        }
+        return num==0;
+        
+    }
+};
+//using binary search 
+//tc O(logn)
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        long long int s=1;
+        long long int e = num/2;
+        if(num==0 || num ==1){
+            return true;
+        }
+        while(s<=e){
+            long long int  mid= s+(e-s)/2;
+            if(mid*mid == num){
+                return true;
+            }else if(mid*mid<num){
+                s= mid+1;
+            }else{
+                e= mid-1;
+            }
+        }
+        return false;
+    }
+};
+
 
