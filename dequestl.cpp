@@ -11,7 +11,7 @@ int main(){
     cout<<endl<<d.back();//print second element
     cout<<endl<<"Empty or not: "<<d.empty()<<endl;//check deque is empty or not
     cout<<"size before erase: "<<d.size()<<endl;//show size of deque
-    d.erase(d.begin(),d.begin()+1); // erase element 
+    d.erase(d.begin(),d.begin()+1); // erase element //tc O(n)***
     cout<<"size after erase: "<<d.size()<<endl;
     for(int i:d){
         cout<<i<<" ";
