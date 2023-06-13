@@ -16,7 +16,7 @@ int getpivot(int a[], int n){
     return s;
 }
 int main(){
-    int a[6]= {8,10,17,1,3,2};
-    cout<<getpivot(a,6);
+    int a[4]= {11,13,15,17};
+    cout<<getpivot(a,4);
     return 0;
 }
