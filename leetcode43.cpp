@@ -78,6 +78,7 @@ public:
 };
 
 // 153. Find Minimum in Rotated Sorted Array
+//tc O(logn)
 class Solution {
 public:
     int findMin(vector<int>& nums) {
