@@ -22,6 +22,7 @@ public:
     }
 };
 //sieve of erathenes
+// tc o(nloglogn)
 class Solution {
 public:
     int countPrimes(int n) {
