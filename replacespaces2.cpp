@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+//optimized version of replacespaces 1
+//tc= O(n)
+//space complexity O(1)
 using namespace std;
 int main(){
     string s;
