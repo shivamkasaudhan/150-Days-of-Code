@@ -1,3 +1,0 @@
-C:/Users/ASUS/Desktop/150  Days Of CPP/cmake-build-debug/CMakeFiles/150__Days_Of_CPP.dir
-C:/Users/ASUS/Desktop/150  Days Of CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ASUS/Desktop/150  Days Of CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
