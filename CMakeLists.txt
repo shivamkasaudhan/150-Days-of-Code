@@ -159,4 +159,4 @@ add_executable(150__Days_Of_CPP
         tempCodeRunnerFile.cpp
         times.cpp
         triplet.cpp
-        vectorstl.cpp leetcode55.cpp)
+        vectorstl.cpp leetcode55.cpp leetcode56.cpp)
