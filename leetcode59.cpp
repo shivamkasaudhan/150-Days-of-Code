@@ -16,3 +16,28 @@ public:
         
     }
 };
+// 2185. Counting Words With a Given Prefix
+//tc O(n^2)
+class Solution {
+public:
+    bool present(string s, string pref){
+        for(int i=0;i<pref.size();i++){
+            if(s[i]!=pref[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    int prefixCount(vector<string>& words, string pref) {
+        int n=pref.size();
+        int count=0;
+        for(int i=0;i<words.size();i++){
+            if(present(words[i],pref)){
+                count++;
+            }
+        }
+        return count;
+        
+    }
+};
+
