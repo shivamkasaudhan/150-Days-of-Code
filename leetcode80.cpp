@@ -26,3 +26,18 @@ public:
         return ans;
     }
 };
+//Question 2
+//1528. Shuffle String
+//tc O(n)
+//90% beats
+class Solution {
+public:
+    string restoreString(string s, vector<int>& indices) {
+        string ans=s;
+        for(int i=0;i<s.size();i++){
+            ans[indices[i]]=s[i];
+        }
+        return ans;
+        
+    }
+};
