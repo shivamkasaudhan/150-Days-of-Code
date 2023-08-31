@@ -1,6 +1,6 @@
 // 2396. Strictly Palindromic Number
-//tc
-//sc
+//tc O(nlog2n)
+//sc O(log2n)
 //code
 class Solution 
 {
